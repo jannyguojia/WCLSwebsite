@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top,
+.bottom {
+    height: 200px;
+    width: 1500px;
+    background-color: bisque;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top img {
+    width: 1500px;
+    height: 100%;
+}
+
+.bottom {
+    background-image: url('img/bottom.png');
+    width: 1500px;
+    height: 200px;
+}
+
+.bottom {
+    background-color: rgb(137, 137, 213);
+    width: 1500px;
+    height: 120px;
+}
+
+.bottom .link,
+.bottom .link2 {
+    float: left;
+    margin-left: 100px;
+    margin-top: 5px;
+    width: 200px;
+    height: 100%;
+}
+
+.link ul,
+.link2 ul {
+    margin-top: 20px;
+
+
+}
+
+.link ul li,
+.link2 ul li {
+    padding-top: 5px;
+    text-align: center;
+    /* 文本居中 */
+    font-family: Arial, sans-serif;
+    /* 设置字体 */
+    font-size: 14px;
+    color: white;
+    /* 设置字体颜色为白色 */
+}
+
+#nav {
+    padding: 0;
+    max-width: 1500px;
+    /* 设置最大宽度 */
+    margin: 0 auto;
+    /* 设置左右外边距为 auto，这会使其水平居中 */
+    height: 51px;
+    /* background-color: lightcoral; */
+    /* margin-left: 14px; 不再需要 */
+    text-align: center;
+    /* 文本居中显示 */
+}
+
+#nav ul {
+    list-style: none;
+}
+
+#nav ul li {
+    /*border:1px solid #0F0;*/
+    width: 123px;
+    float: left;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    background-image: url('img/nav.png');
+
+}
+
+
+#nav a {
+    color: #FFF;
+    text-decoration: none;
+    /*border:1px solid #FFF; */
+    display: block;
+    width: 123px;
+}
+
+#nav a:hover {
+    color: rgb(231, 98, 45);
+    font-weight: bold;
+}
+
+
+#footer {
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(113, 110, 110);
+}
+
+.box {
+    overflow: hidden;
+    width: 1478px;
+    height: 1230px;
+    margin: 10px auto;
+}
+
+a {
+    color: #451313;
+    text-decoration: none;
+}
+
+
+.left {
+    float: left;
+    width: 234px;
+    height: 1050px;
+
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+}
+
+.left :hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+}
+
+.right {
+    float: left;
+    /*  display: grid;*/
+    /* grid-template-columns: repeat(5, 1fr);*/
+    /* 五列布局 */
+    width: 1240px;
+    /* height: 615px; */
+    background-color: #f5f5f5;
+}
+
+.righttop {
+    width: 1200px;
+    border-bottom: 20px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    background-image: url('img/bg1.jpg');
+    /* 替换 'path/to/your/image.jpg' 为你的背景图片路径 */
+    background-size: cover;
+    /* 背景图片大小 */
+    background-position: center;
+    /* 背景图片位置 */
+}
+
+.righttop p {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 1em;
+
+}
+
+
+/* 
+.right div:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+} */
+
+
+.right div img {
+    width: 100%;
+    height: 120px;
+}
+
+.news {
+    float: left;
+    width: 455px;
+    height: 300px;
+    /* background-color: #d15555; */
+    padding: 0 14px;
+    margin-top: 14px;
+    margin-left: 14px;
+}
+
+.newslist li {
+
+    margin-bottom: 10px;
+    /* 设置列表项间距 */
+    font-family: Arial, sans-serif;
+    /* 设置字体 */
+    font-size: 22px;
+    /* 设置字体大小 */
+    transition: background-color 0.3s;
+    /* 添加过渡效果 */
+    background-color: white;
+    /* 设置默认背景颜色 */
+}
+
+.newslist li:hover {
+    color: rgb(72, 72, 83);
+    /* 设置鼠标悬停时的文字颜色 */
+    font-weight: bold;
+    /* 设置鼠标悬停时的字体加粗 */
+    cursor: pointer;
+    /* 设置鼠标悬停时的指针样式 */
+    background-color: lightgray;
+    /* 设置鼠标悬停时的背景颜色 */
+}
+
+.news-container {
+    margin-left: 14px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.news-list {
+    display: flex;
+    width: fit-content;
+    white-space: nowrap;
+    animation: move-news 10s linear infinite;
+}
+
+.news-list li {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+@keyframes move-news {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.news-container:hover .news-list {
+    animation-play-state: paused;
+}
+
+.carousel {
+    float: left;
+    width: 700px;
+    height: 350px;
+    margin-left: 14px;
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.carousel .container {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    left: 0;
+
+    display: flex;
+
+    /* 过渡动画 1s */
+    transition: all 1s;
+}
+
+.carousel .container a {
+    width: 100%;
+    height: 100%;
+
+    flex-shrink: 0;
+}
+
+.carousel .container a img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.carousel .shift .btn {
+    /* 绝对定位且垂直居中 */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+
+    background-color: teal;
+    color: white;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    /* 字符水平垂直居中 */
+    line-height: 50px;
+    text-align: center;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    /* 不透明度 0.5 */
+    opacity: 0.5;
+}
+
+.carousel .shift .left {
+    left: 20px;
+}
+
+.carousel .shift .right {
+    right: 20px;
+}
+
+.carousel .bottom1 {
+    position: absolute;
+
+    bottom: 20px;
+
+    /* 绝对定位水平居中 */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: max-content;
+
+    display: flex;
+    /* 指示器间距 */
+    gap: 10px;
+}
+
+.carousel .bottom1 .indicator {
+    height: 5px;
+    width: 40px;
+
+    background-color: teal;
+
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.carousel:hover .bottom1 .indicator {
+    opacity: 1;
+}
+
+.carousel:hover .shift .btn {
+    opacity: 1;
+}
+
+
+/* 通知栏样式 */
+.notice {
+    width: 100%;
+    /* 设置通知栏宽度 */
+    text-align: center;
+    /* 文本居中 */
+    margin-top: 20px;
+}
+
+
+
+.noticesTitle {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 14px;
+    color: #f5f5f5;
+    background-color: #e6b4b4;
+}
+
+.notices {
+    display: flex;
+    /* 使用 Flexbox 进行水平排列 */
+    justify-content: center;
+    /* 水平居中 */
+}
+
+.notices div {
+    margin: 0 5px;
+    /* 设置小盒子间距 */
+    height: 220px;
+    width: 400px;
+}
+
+.notices div img {
+    height: 220px;
+    width: 400px;
+    background-size: cover;
+    /* 拉伸图片以填满整个盒子 */
+    background-repeat: no-repeat;
+    /* 防止背景图重复显示 */
+    background-position: center;
+    /* 图片居中显示 */
+}
+
+
+/* 新闻栏 */
+.info {
+    width: 100%;
+    /* 设置通知栏宽度 */
+    text-align: center;
+    /* 文本居中 */
+    margin-top: 20px;
+}
+
+.infoTitle {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    margin-left: 14px;
+    color: #f5f5f5;
+    background-color: #e6b4b4;
+}
+
+.infos {
+    display: flex;
+    /* 使用 Flexbox 进行水平排列 */
+    justify-content: center;
+    /* 水平居中 */
+}
+
+.infos div {
+    margin: 0 5px;
+    /* 设置小盒子间距 */
+    height: 220px;
+    width: 400px;
+}
+
+.infos div img {
+    height: 220px;
+    width: 400px;
+    background-size: cover;
+    /* 拉伸图片以填满整个盒子 */
+    background-repeat: no-repeat;
+    /* 防止背景图重复显示 */
+    background-position: center;
+    /* 图片居中显示 */
+}
+
+.title {
+    height: 16px;
+    padding: 5px;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #f5efef;
+    background-color: rgba(91, 86, 86, 0.7);
+    text-align: center;
+}
+
+
+@media screen and (min-width: 10000px) {}
+
+@media screen and (max-width: 600px) {
+    .box {
+        overflow: hidden;
+        width: 600px;
+        height: 430px;
+        margin: 10px auto;
+    }
+
+    .right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 五列布局 */
+        width: 600px;
+        /* height: 615px; */
+        background-color: #f5f5f5;
+    }
+}
+
+@media print {
+    a[href]::after {
+        content: ' (' attr(href) ')';
+    }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notice3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top,
+        .bottom {
+            height: 200px;
+            width: 1500px;
+            background-color: bisque;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .top img {
+            width: 1500px;
+            height: 100%;
+        }
+
+        .bottom {
+            background-image: url('img/bottom.png');
+            width: 1500px;
+            height: 200px;
+        }
+
+        .center {
+            width: 1478px;
+            height: 900px;
+            margin: 10px auto;
+            /* 使用 auto 设置左右外边距，实现水平居中 */
+            text-align: center;
+            /* 文本内容水平居中 */
+        }
+
+
+
+        .para {
+            float: left;
+            width: 1300px;
+            margin: 10px auto;
+            margin-left: 100px;
+        }
+
+        .firstpara {
+            float: left;
+            margin: 20px;
+            width: 900px;
+        }
+
+        .firstphoto {
+            float: left;
+            /* 让图片向左浮动 */
+            margin-top: 20px;
+            margin-left: 100px;
+            width: 300px;
+            /* 设置宽度为 180 像素 */
+            height: 160px;
+        }
+
+        h1 {
+            margin-top: 100px;
+            margin-left: 300px;
+
+        }
+
+        h4 {
+            margin-left: 600px;
+        }
+
+        .para p {
+            overflow: hidden;
+            /* 清除浮动 */
+            margin: 20px;
+        }
+
+        .largephoto {
+            float: left;
+
+            margin: 20px;
+            /* 设置图片与文本之间的间距 */
+            width: 500px;
+            /* 设置宽度为 180 像素 */
+            height: 700px;
+            text-align: center;
+        }
+
+
+        #nav {
+            padding: 0;
+            max-width: 1500px;
+            /* 设置最大宽度 */
+            margin: 0 auto;
+            /* 设置左右外边距为 auto，这会使其水平居中 */
+            height: 51px;
+            /* background-color: lightcoral; */
+            /* margin-left: 14px; 不再需要 */
+            text-align: center;
+            /* 文本居中显示 */
+        }
+
+        #nav ul {
+            list-style: none;
+        }
+
+        #nav ul li {
+            /*border:1px solid #0F0;*/
+            width: 123px;
+            float: left;
+            height: 51px;
+            line-height: 51px;
+            text-align: center;
+            background-image: url('img/nav.png');
+
+        }
+
+
+        #nav a {
+            color: #FFF;
+            text-decoration: none;
+            /*border:1px solid #FFF; */
+            display: block;
+            width: 123px;
+        }
+
+        #nav a:hover {
+            color: rgb(231, 98, 45);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <img src="img\top2.png" alt="">
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="WCLSwebsite.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="Books.php">Books</a></li>
+            <li><a href="https://enrolment-form-7c369.web.app/">Enrolment</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="Notices.html">Notices</a></li>
+            <li class="last"><a href="connectUs.html">Connect Us</a></li>
+        </ul>
+    </div>
+    <div class="center">
+        <h1>celebrate New Zealand Chinese Week Notice</h1>
+        <h4>6-10-2023</h4>
+
+
+        <p class="firstpara">To celebrate New Zealand Chinese Week, our school cooperated with the city library to hold
+            a cultural performance.
+            Tomorrow morning (Sunday 17th September) starts at 10am
+            Location: Newlands Community Center (9 Batchelor Street, Newlands)
+        </p>
+        <img class="largephoto" src="img\notice3-2.jpg" alt="">
+        <img class="largephoto" src="img\notice3-1.jpg" alt="">
+    </div>
+
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+</body>
+
+</html>

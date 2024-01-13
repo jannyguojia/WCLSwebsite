@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top,
+        .bottom {
+            height: 200px;
+            width: 1500px;
+            background-color: bisque;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .top img {
+            width: 1500px;
+            height: 100%;
+        }
+
+        .bottom {
+            background-image: url('img/bottom.png');
+            width: 1500px;
+            height: 200px;
+        }
+
+        .bottom {
+            background-color: rgb(137, 137, 213);
+            width: 1500px;
+            height: 120px;
+        }
+
+        .bottom .link,
+        .bottom .link2 {
+            float: left;
+            margin-left: 100px;
+            margin-top: 5px;
+            width: 200px;
+            height: 100%;
+        }
+
+        .link ul,
+        .link2 ul {
+            margin-top: 20px;
+
+
+        }
+
+        .link ul li,
+        .link2 ul li {
+            padding-top: 5px;
+            text-align: center;
+            /* 文本居中 */
+            font-family: Arial, sans-serif;
+            /* 设置字体 */
+            font-size: 14px;
+            color: white;
+            /* 设置字体颜色为白色 */
+        }
+
+        .center {
+            width: 1478px;
+            height: 700px;
+            margin: 10px auto;
+
+        }
+
+        .para {
+            float: left;
+            width: 1178px;
+            margin: 10px auto;
+        }
+
+        .para .firstphoto {
+            float: left;
+            /* 让图片向左浮动 */
+            margin: 20px;
+            /* 设置图片与文本之间的间距 */
+            width: 300px;
+            /* 设置宽度为 180 像素 */
+            height: 160px;
+        }
+
+        h1 {
+            margin-top: 100px;
+            margin-left: 180px;
+
+        }
+
+        .para p {
+            overflow: hidden;
+            /* 清除浮动 */
+            margin: 20px;
+        }
+
+        .para .largephoto {
+            float: left;
+
+            margin: 20px;
+            /* 设置图片与文本之间的间距 */
+            width: 1000px;
+            /* 设置宽度为 180 像素 */
+            height: 700px;
+        }
+
+        .floatbox {
+            float: right;
+            width: 300px;
+        }
+
+        .floatbox ul li {
+            list-style: none;
+            /* 去除列表默认样式 */
+            padding: 0;
+            /* 去除列表的内边距 */
+            width: 300px;
+            /* 设置宽度为 180 像素 */
+            height: 160px;
+            /* 设置高度为 180 像素 */
+            background-color: #41c8c8;
+            /* 设置背景颜色 */
+            margin-bottom: 10px;
+            /* 设置下边距为 10 像素，用于元素之间的间隔 */
+            text-align: center;
+            /* 文字居中 */
+            line-height: 80px;
+            /* 设置行高使文字垂直居中 */
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            /* 添加阴影 */
+        }
+
+        .sidephoto {
+            width: 300px;
+            height: 100%;
+        }
+
+
+
+        #nav {
+            padding: 0;
+            max-width: 1500px;
+            /* 设置最大宽度 */
+            margin: 0 auto;
+            /* 设置左右外边距为 auto，这会使其水平居中 */
+            height: 51px;
+            /* background-color: lightcoral; */
+            /* margin-left: 14px; 不再需要 */
+            text-align: center;
+            /* 文本居中显示 */
+        }
+
+        #nav ul {
+            list-style: none;
+        }
+
+        #nav ul li {
+            /*border:1px solid #0F0;*/
+            width: 123px;
+            float: left;
+            height: 51px;
+            line-height: 51px;
+            text-align: center;
+            background-image: url('img/nav.png');
+
+        }
+
+
+        #nav a {
+            color: #FFF;
+            text-decoration: none;
+            /*border:1px solid #FFF; */
+            display: block;
+            width: 123px;
+        }
+
+        #nav a:hover {
+            color: rgb(231, 98, 45);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <img src="img\top2.png" alt="">
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="WCLSwebsite.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="Books.php">Books</a></li>
+            <li><a href="https://enrolment-form-7c369.web.app/">Enrolment</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="Notices.html">Notices</a></li>
+            <li class="last"><a href="connectUs.html">Connect Us</a></li>
+        </ul>
+    </div>
+    <div class="center">
+        <h1>WCLS successfully held a lecture on Peking Opera culture</h1>
+        <div class="para">
+            <img class="firstphoto" src="img\new3-1.jpg" alt="">
+            <p>On a cold winter day, the Peking Opera culture lecture held by Wellington Chinese School was filled with
+                enthusiasm.
+                Teacher Shi Juan from the Chinese School and Teacher Ma Bingyang from Yafeng Club vividly explained the
+                characteristics
+                of Peking Opera and had enthusiastic interactions with the teachers and students on site. </p>
+            <p>Through several vivid and exciting Peking Opera clips, the use of oars instead of boats and steps to show
+                waves in the
+                fishing and killing family, the bare-handed threading of needles in Picking up Jade Bracelets, the use
+                of flags instead
+                of water in The Legend of White Snake and four people to show a thousand troops, and three Teacher Shi
+                gave us a very
+                intuitive analysis of the dark fight under bright lights in the fork, and gave us a taste of the unique
+                charm of the
+                virtual characteristics of Peking Opera.
+            </p>
+            <p> Special guest teacher Ma Bingyang from Yafeng Society demonstrated the electronically simulated Peking
+                Opera soundtrack
+                on the spot, and warmly invited students from the Chinese school to come on stage to experience the
+                simple use skills
+                and rich expression content of the prop riding whip. Children of all ages actively participated in the
+                interaction and
+                had a great time practicing.
+
+            </p>
+            <p>The atmosphere was once again enlivened through Teacher Shi’s easy-to-understand explanation of the
+                stylized
+                characteristics of Peking Opera. Teacher Ma also demonstrated the Peking Opera masks of Shengdan
+                Jingchou, and
+                demonstrated the electronic simulation effects of various literary and martial arts accompaniments one
+                by one. The two
+                lecturers continued to invite the students to come to the stage to interact. Whether it was the joy,
+                anger, sorrow, and
+                happiness of the old bearded students, or the delicate orchid fingers and the fluttering sleeves of the
+                beautiful lady,
+                everyone participated enthusiastically, had a happy experience, and left something to be desired.
+            </p>
+
+            <img class="largephoto" src="img\new3-2.jpg" alt="">
+        </div>
+        <div class="floatbox">
+            <ul>
+                <li><img class="sidephoto" src="img\new3-3.jpg" alt=""></li>
+                <li><img class="sidephoto" src=" img\new3-4.jpg" alt=""></li>
+                <li><img class="sidephoto" src="img\new3-5.jpg" alt=""></li>
+                <li><img class="sidephoto" src="img\new3-6.jpg" alt=""></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- <div class="bottom">
+        <div class="link">
+            <ul>
+                <li><a href="img/常见问题.pdf" title="常见问题">常见问题</a></li>
+                <li> <a href="img/WCLS FAQ 2019.pdf" title="FAQ">FAQ</a></li>
+                <li><a href="img/条款及细则.pdf" title="条款及细则">条款及细则</a></li>
+            </ul>
+        </div>
+
+        <div class="link2">
+            <ul>
+                <li><a href="img/WCLS Terms and Conditions 2020.pdf" title="Terms and Conditions">Terms and
+                        Conditions</a></li>
+                <li> <a href="img/WCLS Emergency Procedure 190513 - parents edition V4 ENG.pdf"
+                        title="Emergency Instructions">Emergency Instructions</a></li>
+                <li><a href="img/WCLS Emergency Procedure 190513 - parents edition V4 CHIN.pdf"
+                        title="火灾及地震应急措施">火灾及地震应急措施</a></li>
+            </ul>
+
+
+
+        </div>
+
+        <div id="footer">
+            2008-2024 Wellington Chinese Language School
+
+            <!-- <a href="Documentation/常见问题.docx" title="常见问题">常见问题</a>&nbsp;<a href="http://ice.xmu.edu.cn/confucius.aspx" title="厦大孔子学院">厦大孔子学院</a>&nbsp;<a href="javascript:;" title="Sample link # 3">Link 3</a>&nbsp;<a href="javascript:;" title="Sample link # 4">Link 4</a> -->
+    <!-- <a href="http://college.chinese.cn/" title="孔子学院">孔子学院</a>&nbsp;<a href="http://ice.xmu.edu.cn/confucius.aspx" title="厦大孔子学院">厦大孔子学院</a>&nbsp;<a href="javascript:;" title="Sample link # 3">Link 3</a>&nbsp;<a href="javascript:;" title="Sample link # 4">Link 4</a> -->
+    </div>
+    </div> -->
+</body>
+
+</html>

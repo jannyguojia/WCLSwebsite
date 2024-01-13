@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top,
+.bottom {
+    height: 200px;
+    width: 1500px;
+    background-color: bisque;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top img {
+    width: 1500px;
+    height: 100%;
+}
+
+.bottom {
+    background-image: url('img/bottom.png');
+    width: 1500px;
+    height: 200px;
+}
+
+.bottom {
+    background-color: rgb(137, 137, 213);
+    width: 1500px;
+    height: 120px;
+}
+
+.bottom .link,
+.bottom .link2 {
+    float: left;
+    margin-left: 100px;
+    margin-top: 5px;
+    width: 200px;
+    height: 100%;
+}
+
+.link ul,
+.link2 ul {
+    margin-top: 20px;
+
+
+}
+
+.link ul li,
+.link2 ul li {
+    padding-top: 5px;
+    text-align: center;
+    /* 文本居中 */
+    font-family: Arial, sans-serif;
+    /* 设置字体 */
+    font-size: 14px;
+    color: white;
+    /* 设置字体颜色为白色 */
+}
+
+.box {
+    overflow: hidden;
+    width: 1478px;
+    height: 1230px;
+    margin: 10px auto;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+.left {
+    float: left;
+    width: 234px;
+    height: 930px;
+
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+}
+
+.left :hover {
+    border: 10px dotted cyan;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 五列布局 */
+    width: 1240px;
+    /* height: 615px; */
+    background-color: #f5f5f5;
+}
+
+
+.right>div {
+    /* float: left; */
+    width: 234px;
+    height: 300px;
+    background-color: white;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+
+.right div:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+}
+
+.right div img {
+    width: 100%;
+    height: 120px;
+}
+
+.review {
+    height: 70px;
+    font-size: 14px;
+    padding: 0 14px;
+    margin-top: 14px;
+}
+
+
+.info {
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 0 14px;
+}
+
+.info em {
+    font-style: normal;
+    color: gray;
+    margin-left: 20px;
+    margin-right: 7px;
+
+}
+
+.info h4 {
+    display: inline-block;
+    font-weight: 400;
+}
+
+.info span {
+    color: orangered;
+}
+
+#textbook,
+#exerciseA,
+#exerciseB {
+    float: left;
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+    width: 1020px;
+    /* height: 615px; */
+    background-color: #f5f5f5;
+}
+
+#textbook>div,
+#exerciseA>div,
+#exerciseB>div {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 100px;
+    background-color: lightgrey;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+
+
+
+#textbook img,
+#exerciseA img,
+#exerciseB img {
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+#textbook p,
+#exerciseA p,
+#exerciseB p {
+    text-align: center;
+    /* 文本居中 */
+    font-family: Arial, sans-serif;
+    /* 设置字体 */
+    font-size: 16px;
+    /* 设置字号 */
+    font-weight: bold;
+    /* 设置加粗 */
+    color: gray;
+}
+
+menu {
+    list-style-type: none;
+
+}
+
+li:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+}
+
+#nav {
+    padding: 0;
+    max-width: 1500px;
+    /* 设置最大宽度 */
+    margin: 0 auto;
+    /* 设置左右外边距为 auto，这会使其水平居中 */
+    height: 51px;
+    /* background-color: lightcoral; */
+    /* margin-left: 14px; 不再需要 */
+    text-align: center;
+    /* 文本居中显示 */
+}
+
+#nav ul {
+    list-style: none;
+}
+
+#nav ul li {
+    /*border:1px solid #0F0;*/
+    width: 123px;
+    float: left;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    background-image: url('img/nav.png');
+
+}
+
+
+#nav a {
+    color: #FFF;
+    text-decoration: none;
+    /*border:1px solid #FFF; */
+    display: block;
+    width: 123px;
+}
+
+#nav a:hover {
+    color: rgb(231, 98, 45);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 10000px) {}
+
+@media screen and (max-width: 600px) {
+    .box {
+        overflow: hidden;
+        width: 600px;
+        height: 430px;
+        margin: 10px auto;
+    }
+
+    .right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 五列布局 */
+        width: 600px;
+        /* height: 615px; */
+        background-color: #f5f5f5;
+    }
+}
+
+@media print {
+    a[href]::after {
+        content: ' (' attr(href) ')';
+    }
+}

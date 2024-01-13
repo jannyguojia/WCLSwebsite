@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top,
+        .bottom {
+            height: 200px;
+            width: 1500px;
+            background-color: bisque;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .top img {
+            width: 1500px;
+            height: 100%;
+        }
+
+        .bottom {
+            background-image: url('img/bottom.png');
+            width: 1500px;
+            height: 200px;
+        }
+
+        .bottom {
+            background-color: rgb(137, 137, 213);
+            width: 1500px;
+            height: 120px;
+        }
+
+        .bottom .link,
+        .bottom .link2 {
+            float: left;
+            margin-left: 100px;
+            margin-top: 5px;
+            width: 200px;
+            height: 100%;
+        }
+
+        .link ul,
+        .link2 ul {
+            margin-top: 20px;
+
+
+        }
+
+        .link ul li,
+        .link2 ul li {
+            padding-top: 5px;
+            text-align: center;
+            /* 文本居中 */
+            font-family: Arial, sans-serif;
+            /* 设置字体 */
+            font-size: 14px;
+            color: white;
+            /* 设置字体颜色为白色 */
+        }
+
+        .box {
+
+            display: flex;
+            justify-content: center;
+            /* 在主轴上居中 */
+            align-items: center;
+            /* 在交叉轴上居中 */
+            height: 100vh;
+            /* 用于垂直居中 */
+        }
+
+        .connect {
+            background-image: url("img/wclsbackground.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 21px solid rgb(104, 119, 126);
+            width: 800px;
+            height: 600px;
+            top: 150px;
+            left: 580px;
+        }
+
+        .connect label {
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        menu {
+            list-style-type: none;
+
+        }
+
+        li:hover {
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .3);
+        }
+
+        #nav {
+            padding: 0;
+            max-width: 1500px;
+            /* 设置最大宽度 */
+            margin: 0 auto;
+            /* 设置左右外边距为 auto，这会使其水平居中 */
+            height: 51px;
+            /* background-color: lightcoral; */
+            /* margin-left: 14px; 不再需要 */
+            text-align: center;
+            /* 文本居中显示 */
+        }
+
+        #nav ul {
+            list-style: none;
+        }
+
+        #nav ul li {
+            /*border:1px solid #0F0;*/
+            width: 123px;
+            float: left;
+            height: 51px;
+            line-height: 51px;
+            text-align: center;
+            background-image: url('img/nav.png');
+
+        }
+
+
+        #nav a {
+            color: #FFF;
+            text-decoration: none;
+            /*border:1px solid #FFF; */
+            display: block;
+            width: 123px;
+        }
+
+        #nav a:hover {
+            color: rgb(231, 98, 45);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <img src="img\top2.png" alt="">
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="WCLSwebsite.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="Books.php">Books</a></li>
+            <li><a href="https://enrolment-form-7c369.web.app/">Enrolment</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="Notices.html">Notices</a></li>
+            <li class="last"><a href="connectUs.html">Connect Us</a></li>
+        </ul>
+    </div>
+    <div class="box">
+        <div class="connect" align="center">
+            <br><br><br><br>
+            <h1>
+                <center>Connect us</center>
+            </h1><br /><br><br /><br>
+            <label for="email">Our Email:wcls.enrol@gmail.com</label><br><br>
+            <label for="email">WeChat ID: WCLS1972</label><br /><br>
+            <label for="email">Facebook:Wellington-Chinese-Language-School</label><br /><br><br /><br>
+            <label for="something">If you have any questions please contact us. </label><br /><br>
+
+
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="link">
+            <ul>
+                <li><a href="img/常见问题.pdf" title="常见问题">常见问题</a></li>
+                <li> <a href="img/WCLS FAQ 2019.pdf" title="FAQ">FAQ</a></li>
+                <li><a href="img/条款及细则.pdf" title="条款及细则">条款及细则</a></li>
+            </ul>
+        </div>
+
+        <div class="link2">
+            <ul>
+                <li><a href="img/WCLS Terms and Conditions 2020.pdf" title="Terms and Conditions">Terms and
+                        Conditions</a></li>
+                <li> <a href="img/WCLS Emergency Procedure 190513 - parents edition V4 ENG.pdf"
+                        title="Emergency Instructions">Emergency Instructions</a></li>
+                <li><a href="img/WCLS Emergency Procedure 190513 - parents edition V4 CHIN.pdf"
+                        title="火灾及地震应急措施">火灾及地震应急措施</a></li>
+            </ul>
+
+
+
+        </div>
+
+        <div id="footer">
+            2008-2024 Wellington Chinese Language School
+
+            <!-- <a href="Documentation/常见问题.docx" title="常见问题">常见问题</a>&nbsp;<a href="http://ice.xmu.edu.cn/confucius.aspx" title="厦大孔子学院">厦大孔子学院</a>&nbsp;<a href="javascript:;" title="Sample link # 3">Link 3</a>&nbsp;<a href="javascript:;" title="Sample link # 4">Link 4</a> -->
+            <!-- <a href="http://college.chinese.cn/" title="孔子学院">孔子学院</a>&nbsp;<a href="http://ice.xmu.edu.cn/confucius.aspx" title="厦大孔子学院">厦大孔子学院</a>&nbsp;<a href="javascript:;" title="Sample link # 3">Link 3</a>&nbsp;<a href="javascript:;" title="Sample link # 4">Link 4</a> -->
+        </div>
+
+    </div>
+</body>
+
+</html>
